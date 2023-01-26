@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Finding Non-Matchig Characters</title>
+    </head>
+    <script type="text/javascript">
+    var p = /[^abc]/;
+    function fun() {
+        var str = t1.value;
+        if(p.test(str))
+        {
+            alert("The String "+str+" contains other than a,b,c");
+        }
+        else
+        {
+            alert("The String "+str+" contains a,b,c");
+        }
+    }
+    </script>
+    <body>
+        <h3>Finding Non-Matchig Characters</h3>
+        Enter the String = <input type="text" id="t1">
+        <br><br><input type="button" value="Check" onclick="fun()">
+        
+    </body>
+</html>

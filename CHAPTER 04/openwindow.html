@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Opening Window</title>
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+		var obj;
+		function  new_win() {
+			for (var i = 0; i < 5; i++) 
+			{
+				window.open("","","width=500, height=500");		
+			}
+		}
+		function close() {
+			obj.close();
+		}
+		</script>
+		<p>Press bu
+			tton to open new window.</p>
+		<input type="Button" value="OPEN" onclick="new_win()">
+		<p>Press button to close window.</p>
+		<input type="Button" value="CLOSE" onclick="close()">
+	</body>
+</html>

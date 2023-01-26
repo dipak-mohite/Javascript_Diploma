@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Whether the string contains the given pattern</title>
+    </head>
+    <script type="text/javascript">
+    var p = /student/i;
+    function fun() {
+        var str = t1.value;
+        if(p.test(str))
+        {
+            alert("The String "+str+" contains the given pattern.");
+        }
+        else
+        {
+            alert("The String "+str+" does not contains the given pattern.");
+        }
+    }
+    </script>
+    <body>
+        <h3>Checking the availability of string.</h3>
+        Enter the String = <input type="text" id="t1">
+        <br><br><input type="button" value="Check" onclick="fun()">
+        
+    </body>
+</html>

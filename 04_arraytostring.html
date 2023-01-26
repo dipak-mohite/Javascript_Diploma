@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Array elements into string</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+/*  The join() function is used to combine array elements
+    into string. This join method may have parameter which is a 
+    seperater symbol that used to separate array elements
+    like : /, *, -, etc. When no separater is mentioned in 
+    paramereter it will be ,(comma).
+
+    Syntax : array.join(Seperater);
+*/
+var a = new Array();
+a[0] = "java";
+a[1] = "CSS";
+a[2] = "STE";
+
+var str = a.join(); //without separater
+document.write(str);
+
+document.write("<br>");
+
+var str = a.join("/"); //with separater /
+document.write(str);
+
+document.write("<br>");
+
+var str = a.join("*"); //with separater *
+document.write(str);
+
+</script>
+</body>
+</html>

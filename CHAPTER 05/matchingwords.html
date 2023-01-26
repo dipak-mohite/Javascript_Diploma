@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Matching Words</title>
+    </head>
+    <script type="text/javascript">
+    function fun() {
+        var str = t1.value;
+        var pat = str.match(/student/g);
+        if(pat!=null)
+        {
+            alert("The String "+str+" contains student");
+        }
+        else
+        {
+            alert("The String "+str+" doesn not contains student");
+        }
+    }
+    </script>
+    <body>
+        <h3>Matching Words</h3>
+        Enter the String = <input type="text" id="t1">
+        <br><br><input type="button" value="Check" onclick="fun()">
+        
+    </body>
+</html>

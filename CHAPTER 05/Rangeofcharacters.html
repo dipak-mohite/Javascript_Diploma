@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Range of Characters</title>
+    </head>
+    <script type="text/javascript">
+    var p = /[a-o]/;
+    function fun() {
+        var str = t1.value;
+        if(p.test(str))
+        {
+            alert("The String "+str+" contains characters in range a-o");
+        }
+        else
+        {
+            alert("The String "+str+" does not contains characters in range a-o");
+        }
+    }
+    </script>
+    <body>
+        <h3>Finding Range of Characters</h3>
+        Enter the String = <input type="text" id="t1">
+        <br><br><input type="button" value="Check" onclick="fun()">
+        
+    </body>
+</html>

@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title>Admission Process 2022</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="dipak">
+        <form name="form1" action="submitted.html">
+            <h1 align="center">MH-CET Direct Second Year Engineeering Admission</h1>
+           <hr><b>Personal Details :</b><hr>
+            First name : <input type="text" name="t1" onchange="fun()" size="15">  
+            Middle name : <input type="text" name="t2" onchange="fun()" size="15">     
+            Last name : <input type="text" name="t3" onchange="fun()" size="15"><br><br>     
+            Full name : <input type="text" name="t4" onchange="fun()">   
+            Full name as per Diploma Marksheet: <input type="text" name="t5" onchange="fun()"><br><br>     
+
+            DOB : <select name="Day" id="age1" >
+                <option value="age">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>   
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select name="Month" id="m1" >
+                <option value="age">Month</option>
+                <option value="jan">January</option>
+                <option value="feb">Frebruary</option>
+                <option value="mar">March</option>
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+            </select>
+
+                <select name="year" id="age1" >
+                <option value="age">Year</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+            </select>
+            
+            &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp<!--space-->
+            Gender : 
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+            <br><br>
+             <!--space-->
+            Category : <select name="category" id="b" >
+                <option value="cate">Select Category</option>
+                <option value="open">OPEN/SEBC/EWS</option>
+                <option value="minority">Minority</option>
+                <option value="scst">SC/ST</option>
+                <option value="obc">VJNT/OBC/SBC</option>
+                </select>
+            
+            <br><br>
+
+            Current Address :<br>
+            <textarea name="tempn" id="temp" cols="50" rows="5"></textarea><br><br>
+            <input type="checkbox" onclick="fun2()">Current Address is same as Permenent Address     <br>    
+           <br>
+            Permenent Address :<br>
+            <textarea name="perm" id="per" cols="50" rows="5"></textarea><br><br>
+            <br>
+            
+            Mobile number : <input type="text" name="t6"  id="t6" size="10"> 
+            <input type="button" id= "b1" value="Verify" onclick="fun3(this)">   
+            E-mail Address : <input type="text" name="t7" id="t7" size="30">
+            <input type="button" value="Verify" onclick="fun4(this)"><br><br><br>
+         
+            <hr>
+           <b> Educatiional Details :</b>
+           <hr>
+           <p><b>1. Diploma </b></p>
+            Board :
+           <select name="university" id="age1" >      
+           <option value="board">Select Board</option>
+           <option value="1">MSBTE</option>
+           </select>
+
+            Passing Year : 
+           <select name="year" id="year" >
+               <option value="age">Select Year</option>
+               <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+           </select>
+
+            Branch : <select name="branch" id="b" >
+               <option value="branch">Select Branch</option>
+               <option value="CO">Computer Engineering</option>
+               <option value="CE">Civil Engineering</option>
+               <option value="EJ">E&TC Engineering</option>
+               <option value="ME">Mechanical Engineering</option>
+               <option value="CH">Chemical Engineering</option>
+               <option value="IT">Information Technology</option>
+               </select><br><br>
+
+
+               Institute : 
+           <select name="year" id="institute" >
+               <option value="institute">Select Institute</option>
+               <option value="pune">Government Polytechnic Pune</option>
+               <option value="Aurangabad">Government Polytechnic Aurangabad</option>
+               <option value="latur">Government Polytechnic Latur</option>
+               <option value="Nashik">Government Polytechnic Nashik</option>
+               <option value="Amravati">Government Polytechnic Amravati</option>
+               <option value="Osmanabad">Government Polytechnic Osmanabad</option>
+               <option value="Kolhapur">Government Polytechnic Kolhapur</option>
+               <option value="Nagpur">Government Polytechnic Nagpur</option>
+               <option value="Ahemednagar">Government Polytechnic Ahemednagar</option>
+               <option value="Mumbai">Government Polytechnic Mumbai</option>
+               <option value="Solapura">Government Polytechnic Solapur</option>
+               <option value="thane">Government Polytechnic Thane</option>
+               <option value="jal">Government Polytechnic Jalgaon</option>
+               <option value="karad">Government Polytechnic Karad</option>
+               <option value="dhule">Government Polytechnic Dhule</option>
+               <option value="Gadchiroli">Government Polytechnic Gadchiroli</option>
+               <option value="Jintur">Government Polytechnic Jintur</option>
+               <option value="Nanded">Government Polytechnic Nanded</option>
+               <option value="Jalgaon">Government Polytechnic Jalna</option>
+               <option value="Washim">Government Polytechnic Washim</option>
+               <option value="Yavatmal">Government Polytechnic Yavatmal</option>
+               <option value="Hingoli">Government Polytechnic Hingoli</option>
+               <option value="Ratnagiri">Government Polytechnic Ratnagiri</option>
+               <option value="Nandurbar">Government Polytechnic Nandurbar</option>
+               <option value="Beed">Government Polytechnic Beed</option>
+           </select>
+           
+           Enrollment number : <input type="text" name="e1"> 
+              
+           
+           <br><br>
+            1st-Sem Percentage : <input type="text" name="e4" size="1">% &nbsp&nbsp&nbsp&nbsp
+            2nd-Sem Percentage : <input type="text" name="e5" size="1">% &nbsp&nbsp&nbsp&nbsp
+            3rd-Sem Percentage : <input type="text" name="e6" size="1">% &nbsp&nbsp&nbsp&nbsp
+            <br><br>
+            4th-Sem Percentage : <input type="text" name="e7" size="1">% &nbsp&nbsp&nbsp&nbsp
+            5th-Sem Percentage : <input type="text" name="e2" size="1">% &nbsp&nbsp&nbsp&nbsp <!--&nbsp : used for space-->
+            6th-Sem Percentage : <input type="text" name="e3" size="1">% &nbsp&nbsp&nbsp&nbsp
+            <br><br>
+            Aggregate : <input type="button" name="avg" value="Check" onclick="fun5()">%
+           <br><br>
+
+          <hr>
+          <p><b>2. SSC </b></p>
+           Board :
+          <select name="board" id="dboard" >      
+          <option value="board">Select Divisional Board</option>
+          <option value="pb">PUNE BOARD</option>
+          <option value="nb">NAGPUR BOARD</option>
+          <option value="ab">AURANGABAD BOARD</option>
+          <option value="mb">MUMBAI BOARD</option>
+          <option value="kb">KOLHAPUR BOARD</option>
+          <option value="amb">AMRAVATI BOARD</option>
+          <option value="nasb">NASHIK BOARD</option>
+          <option value="lb">LATUR BOARD</option>
+          <option value="kokb">KOKAN BOARD</option>
+
+            </select>
+           Passing Year : 
+          <select name="year2" id="year2" >
+              <option value="age">Select Year</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+          </select>
+
+            Technical Subject : <select name="branch" id="t" >
+                <option value="no">NO</option>
+                <option value="yes">YES</option>
+            </select><br><br>
+
+            School name : <input type="text" name="e1" size="70"><br><br>
+              Exam Seat number : <input type="text" name="e1">
+              Percentage : <input type="text" name="m2""><br><br>
+              Marks in - English : <input type="text" name="m3" size="15">
+              Maths : <input type="text" name="m4" size="15" size="15">
+              Science : <input type="text" name="m5" size="15">
+          <br><br>
+
+         <hr>
+        <div class="buttons">
+         
+         <input type="reset" class="button2" id="r1" value="RESET">
+         <input type="button" class="button1" id="c1" value="CANCEL" onclick="window.location='project.html';">
+         <input type="submit" class="button3" id="s1" value="SUBMIT"><br>
+         <br>
+        </div>
+        
+        </form>
+    
+    </div>
+
+        <script lanuage="javascript" type="text/javascript">       
+
+         window.document.body.forms.form1.c1.color= "red";
+        function fun() {
+            with(document.forms.form1)
+            {
+                if(t1.value!=""&&t2.value!=""&&t3.value!="")
+                {
+                    t4.value = t1.value+" "+t2.value+" "+t3.value;
+                    t5.value = t3.value+" "+t1.value+" "+t2.value;
+                }
+            }               
+        }
+        function fun2() {
+            
+            var x = document.getElementById("temp").value;
+            document.getElementById("per").value = x;
+        }
+
+        function fun3(element) {
+            
+            if(t6.value=="")
+             alert("Please enter mobile number");
+             else{
+             element.value="Verified";
+             element.style.color="white";
+             element.style.background="green";
+             }
+         
+     }
+         function fun4(element) {
+            
+            if(t7.value=="")
+             alert("Please enter mail id!");
+             else{
+             element.value="Verified";
+             element.style.color="white";
+             element.style.background="green";
+             }
+         
+     }
+
+        function fun5() {
+            with(document.forms.form1)
+            {
+               var tot1 = parseInt(e2.value);
+               var tot2 = parseInt(e3.value);
+               var total = tot1+tot2;
+               var cal = total/2;
+               avg.value = cal;
+            }
+
+        }
+        </script>
+        <button align="right"><a href="Javascript:window.print()">PRINT FORM</a></button>
+        
+        <p align="right"><a href="https://www.instagram.com/dipakmohiite/">@Dipak_Mohite</i></a></p>
+      
+    </body>
+</html>

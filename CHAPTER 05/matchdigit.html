@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Matching Digits</title>
+    </head>
+    <script type="text/javascript">
+    var p = /\d/;
+    function fun() {
+        var str = t1.value;
+        if(p.test(str))
+        {
+            alert("The String "+str+" contains digits");
+        }
+        else
+        {
+            alert("The String "+str+" doesn not contains digits");
+        }
+    }
+    </script>
+    <body>
+        <h3>Matching Digits</h3>
+        Enter the String = <input type="text" id="t1">
+        <br><br><input type="button" value="Check" onclick="fun()">
+        
+    </body>
+</html>

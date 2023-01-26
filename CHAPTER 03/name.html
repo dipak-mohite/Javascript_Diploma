@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Homework : 08-10-2021</title>
+    </head>
+    <body>
+        <form name="form1"><b>
+            Enter first name : <input type="text" name="t1" onchange="fun()"><br><br>     
+            Enter middle name : <input type="text" name="t2" onchange="fun()"><br><br>     
+            Enter last name : <input type="text" name="t3" onchange="fun()"><br><br>     
+            Your full name is : <input type="text" name="t4" onchange="fun()"><br><br>     
+        </form>
+        
+        <script lanuage="javascript" type="text/javascript">       
+        function fun() {
+            with(document.forms.form1)
+            {
+                if(t1.value!=""&&t2.value!=""&&t3.value!="")
+                    t4.value = t1.value+" "+t2.value+" "+t3.value;
+            }
+                 
+        }
+        </script>
+        
+    </body>
+</html>

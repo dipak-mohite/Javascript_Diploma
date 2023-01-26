@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>City state</title>
+    </head>
+    <body>
+        <form name="f1">
+            <select name="op" size="2">
+                <option id="1" value="mh">Maharashtra</option>  
+                <option id="2" value="ap">Andhra</option>  
+            </select><br><br>
+            
+            <input type="submit" value="SUBMIT" name="s">
+            <input type="reset" name="b1" value="CITY" onclick="show()">
+            <p id="demo"></p>
+            
+        </form>
+        <script>
+            function show() {
+                with(document.forms.f1)
+                {
+                    if(b1.value=="STATE")
+                    {
+                        b1.value="CITY";
+                        op[0].text="Maharashtra";
+                        op[1].text="Andhra";
+                    }
+                    if(b1.value=="CITY")
+                    {
+                        b1.value="STATE";
+                        op[0].text="Pune";
+                        op[1].text="Vijayvada";
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>

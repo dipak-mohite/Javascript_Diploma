@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Changing Content</title>
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+		var obj;
+		function  new_win() {
+			
+				obj = window.open("","","width=500, height=500");		
+			
+		}
+		function closewin() {
+			obj.close();
+		}
+		</script>
+		<p>Press button to open new window.</p>
+		<input type="Button" value="OPEN" onclick="new_win()">
+		<p>Press button to close window.</p>
+		<input type="Button" value="CLOSE" onclick="closewin()">
+	</body>
+</html>

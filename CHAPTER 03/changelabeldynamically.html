@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Checkbox label dynamically</title>
+    </head>
+    <body>
+        <form name="f1">
+            <select size="2">
+                <option label="merc" id="m">Mercedes</option>
+                <option label="volvo">Volvo</option>
+                 </select><br><br>
+                <input type="button" value="Tri it" onclick="myfunction()">
+                 <br>
+                 <p id="demo"></p>
+            
+        </form>
+        <script>
+            function myfunction() {
+             document.getElementById("demo").innerHTML=document.getElementById("m").innerHTML; 
+             document.getElementById("m").innerHTML="Fortuner";
+            }
+
+        </script>
+    </body>
+</html>

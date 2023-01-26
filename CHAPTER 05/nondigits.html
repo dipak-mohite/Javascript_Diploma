@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Matching Non-digits</title>
+    </head>
+    <script type="text/javascript">
+    var p = /\D/;
+    function fun() {
+        var str = t1.value;
+        if(p.test(str))
+        {
+            alert("The String "+str+" contains non-digits");
+        }
+        else
+        {
+            alert("The String "+str+" does not contains non-digits");
+        }
+    }
+    </script>
+    <body>
+        <h3>Matching Non-digits</h3>
+        Enter the String = <input type="text" id="t1">
+        <br><br><input type="button" value="Check" onclick="fun()">
+        <br><br><br><h5>Non-digits = Other characters than the digits.</h5>
+    </body>
+</html>

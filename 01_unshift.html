@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Unshift</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+
+//  unshift() : This method add 1 or more elements at the 
+//  begining of array
+//  Syntax : array.unshift(element1, element2, ...,elementn);
+
+var a = new Array();
+a[0] = 12;
+a[1] = 15;
+a[2] = "Java";
+
+document.write("Length = "+a.length);
+
+a.unshift("CSS","EST")
+
+document.write("<br>Length = "+a.length+"<br>");	
+
+for(var i=0; i<a.length; i++)
+{
+    document.write("<br>"+a[i]);
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Text Rollover</title>
+        <script language="javascript" type="text/javascript">
+        function fortuner() {
+            document.car1.src='fortuner.jpg';
+            document.getElementById("detail").innerHTML="Fortuner current onroad price : ₹ 45.47 Lakh";
+        }
+        function endeavour() {
+            document.car2.src='ford.jpg';
+            document.getElementById("detail").innerHTML="Endeavour current onroad price : ₹ 42.25 Lakh ";
+        }
+        function bmw() {
+            document.car3.src='bmw.jpg';
+            document.getElementById("detail").innerHTML="BMW current onroad price : ₹ 2.17 Crore";
+        }
+        function thar() {
+            document.car4.src='thar.jpg';
+            document.getElementById("detail").innerHTML="Thar current onroad price : ₹ 16.46 Lakh";
+        }
+        function mercedes() {
+            document.car5.src='mercedes.jpg';
+            document.getElementById("detail").innerHTML="Mercedes current onroad price : ₹ 2.64 Crore.";
+        }
+        </script>
+    </head>
+    <body>
+        <h1 style="background-color: orange; text-align: center;">Cars Details</h4>
+        <a onmouseover="fortuner()">FORTUNER</a>
+        <a onmouseover="endeavour()">ENDEAVOUR</a>
+        <a onmouseover="bmw()">BMW</a>
+        <a onmouseover="thar()">THAR</a>
+        <a onmouseover="mercedes()">MERCEDES</a><br>
+        <p id="detail" style="background-color: rgb(253, 255, 108); font-size: 30px;"><b>Details</p><br>
+        <p id="detail" style="background-color: rgb(253, 255, 108); font-size: 30px;"><b>Details</p><br>
+        <img src="" name="car1">
+        <img src="" name="car2">
+        <img src="" name="car3">
+        <img src="" name="car4">
+        <img src="" name="car5">
+    </body>
+</html>

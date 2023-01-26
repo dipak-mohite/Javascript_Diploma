@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+
+<form target="top">
+
+    <h1 align="center"><u>Form Elements</u></h1>
+        <!--Text Field-->
+        <p><b><u>Text Field : </u></b></p>
+        Enter First name:
+        <input type="text" id="fname" name="t1"><br><br>
+        Enter Last name:
+        <input type="text" id="lname" name="t2"><br><br>
+       
+        <!--Text Area-->
+        <p><b><u>Text Area :</u></b></p>
+        <textarea name="abc" id="" cols="30" rows="10">Write your comments here...</textarea><br><br>
+
+        <!--Radio Button-->  
+        <p><b><u>Radio Button :</u></b></p>    
+        <input type="radio" name="a" value="java">JAVA
+        <input type="radio" name="a" value="c++">C++
+        <input type="radio" checked name="a" value="Python">PYTHON
+        <input type="radio" name="a" value="C">C<br>
+        
+        <!--Select-->   
+        <p><b><u>Select :</u></b></p>
+        <select name="branch" id="b" >
+                <option value="branch">Select Branch</option>
+                <option value="co">Computer Engineering</option>
+                <option value="ce">Civil Engineering</option>
+                <option value="ej">E&TC Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+        </select>
+
+        <!--List-->     
+        <p><b><u>Multi-Selective :</u></b></p>
+        <select name="branch" id="b" multiple>
+                <option value="ajp">AJP</option>
+                <option value="css">CSS</option>
+                <option value="ste">STE</option>
+                <option value="osy">OSY</option>
+                <option value="est">EST</option>
+        </select><br><br>
+        
+        <!--Buttons-->    
+        <p><b><u>Buttons :</u></b></p>
+        <input type="reset" value="RESET">
+        <input type="Submit" value="SUBMIT">
+      
+</form>
+
+</body>
+</html>

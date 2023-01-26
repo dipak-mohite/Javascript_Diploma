@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Form Object Demo</title>
+    </head>
+    <body>
+        <form name="form1">
+            <h1>Fill Your Address Details</h1>
+            <b>Temporary Address :</b><br>
+            <textarea name="tempn" id="temp" cols="30" rows="10"></textarea><br><br>
+            <b>Permenent Address :</b><br>
+            <textarea name="perm" id="per" cols="30" rows="10"></textarea><br><br>
+            <input type="checkbox" onclick="fun()">is Temporary Address is same as Permenent Address         
+        </form>
+        
+        <script lanuage="javascript" type="text/javascript">       
+        function fun() {
+            
+            var x = document.getElementById("temp").value;
+            document.getElementById("per").value = x;
+        }
+        </script>
+        
+    </body>
+</html>

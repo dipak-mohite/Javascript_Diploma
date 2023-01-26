@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>innerHTML</title>
+    </head>
+    <body>
+        <form name="form1">
+            <pi id="p1">Welcome</p> 
+            <input type="button" value="Check me out" onclick="fun()">     
+            <pi id="p2"></p>      
+              
+        </form>
+        
+        <script lanuage="javascript" type="text/javascript">       
+        function fun() {
+            
+            var x = document.getElementById("p1").innerHTML;
+            document.getElementById("p2").innerHTML = x;
+        }
+        </script>
+        
+    </body>
+</html>

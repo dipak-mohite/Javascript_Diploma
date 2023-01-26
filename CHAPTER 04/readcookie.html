@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Reading Cookie Values</title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+        function readCookie() {
+            var cookies = document.cookie;
+            document.write("All Stored Cookies : <br>"+cookies);
+            var cookiearray = cookies.split(';');
+            for(var i=0; i<cookiearray.length;i++)
+            {
+                var cookie_pair = cookiearray[i];
+                var name_value_array = cookie_pair.split('=');
+                var name = name_value_array[0];
+                var value = name_value_array[1];
+                document.write("<br><br>Name: "+name+" <br> Value: "+value);
+            }
+        }
+
+        </script>
+        <input type="button" value="READ COOKIE" onclick="readCookie()">
+    </body>
+    
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Form Object Demo</title>
+    </head>
+    <body>
+        <form name="form1">
+            Name : <input type="text" name="t1" id="i1"> <br><br>
+            <input type="button" name="b1" value="OK" onclick="fun2()">
+        </form>
+        
+        <script lanuage="javascript" type="text/javascript">
+        
+        function fun2() {
+            var x = document.getElementById("i1")
+            
+            if (x.value=="") 
+                alert("Please enter your name!");
+            else
+                alert("Name = "+x.value);
+        }
+        </script>
+    </body>
+</html>

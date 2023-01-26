@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Changing colors</title>
+	</head>
+	<body>
+		<script language="javascript" type="text/javascript">
+		function myfun() 
+		{
+			setInterval(display, 200);
+		}
+		function display()
+		{
+			document.getElementById("para").innerHTML+="Welcome to Javascript...";
+			var i = Math.floor(Math.random()*10000000).toString(16);
+  			document.body.style.backgroundColor = "#"+i;
+			document.getElementById("b1").value="Current Background Color Code = "+"#"+i;
+		}
+		</script>
+		<input type="button" id="b1" value="Start" onclick="myfun()">
+		<p id="para"></p>
+	</body>
+</html>
+

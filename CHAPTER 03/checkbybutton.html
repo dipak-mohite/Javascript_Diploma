@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Checkbox check by Button</title>
+    </head>
+    <body>
+        <form name="f1">
+            <input type="checkbox" id="c1">Bluetooth
+            <br><br>   
+            <input type="button" name="b1" onclick="check()" value="ON">
+            <input type="button" name="b2" onclick="uncheck()" value="OFF">
+        </form>
+        <script>
+            
+            function check() {
+                
+             document.getElementById("c1").checked=true;   
+            }
+            function uncheck() {
+             document.getElementById("c1").checked=false;   
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+
+.dipak
+{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+h1{
+   
+    color: rgb(0, 207, 17);
+}
+form{
+    border-radius: 8px;
+    background-color: rgba(238, 255, 0, 0.39);
+    width: 60%;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+

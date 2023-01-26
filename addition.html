@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Arithmetic expression</title>
+</head>
+<body>
+<label>Enter 1st Number : </label>
+<input type="text" id="n1"><br><br>
+<label>Enter 2nd Number :</label>
+<input type="text" id="n2">
+<br><br>
+<input type="button" value="Result" onclick="Result()">
+<p id="a"></p>
+<p id="s"></p>
+<p id="m"></p>
+<p id="d"></p>
+<script language="javascript" type="text/javascript">
+ function Result(){
+     var n1 = parseInt(document.getElementById("n1").value);
+     var n2 = parseInt(document.getElementById("n2").value);
+     var add = n1+n2;
+     var sub = n1-n2;
+     var mul = n1*n2;
+     var div = n1/n2;
+     document.getElementById("a").innerHTML="Addition : "+add;
+     document.getElementById("s").innerHTML="Substraction : "+sub;
+     document.getElementById("m").innerHTML="Multiplication : "+mul;
+     document.getElementById("d").innerHTML="Division : "+div;
+ }
+</script>
+</body>
+</html>
